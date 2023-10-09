@@ -19,4 +19,8 @@ def expense_page():
              {"id":3,"saving":45000,"item":"Pot"},
                {"id":4,"saving":90000,"item":"Bike"},
     ]
-    return render_template('expense.html',data_value=item)
+    return render_template('expense_page.html',data_value=item)
+
+@app.route('/register') #Decorator
+def register_page():
+    return render_template('register_page.html')
