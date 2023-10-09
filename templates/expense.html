@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1 class="head">Expense Page</h1>
+    <div class="list">
+        {%for it in data_value  %}
+        <div class="card">
+        <h3>{{it.id}}</h3>
+        <h3>{{it.saving}}</h3>
+        <h3>{{it.item}}</h3>
+        </div>
+        {%  endfor  %}
+    </div>
+</body>
+</html>

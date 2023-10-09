@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(42, 40, 40);
+    color: whitesmoke;
+}
+.head{
+    text-align: center;
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 25px;
+    margin: 20px;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 5px;  
+}
+.card{
+    background-color: black;
+    width: 200px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: whitesmoke;
+    border: 1px solid black;
+}
