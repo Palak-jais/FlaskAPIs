@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<nav>
+    <div class="nav">
+        <h2 class="nav-head">Expenzo</h2>
+        <ul class="links">
+            <a class="link" href="{{url_for('home_page')}}">Home</a>
+            <a class="link" href="{{url_for('about_page')}}">About</a>
+            <a class="link" href="{{url_for('expense_page')}}">Expense</a>
+            <a class="link" href="{{url_for('register_page')}}">Register</a>
+        </ul>
+    </nav>
+{% block content %}
+
+{% endblock %}
+
+</body>
+</html>
