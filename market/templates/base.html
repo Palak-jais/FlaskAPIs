@@ -14,8 +14,18 @@
             <a class="link" href="{{url_for('about_page')}}">About</a>
             <a class="link" href="{{url_for('expense_page')}}">Expense</a>
             <a class="link" href="{{url_for('register_page')}}">Register</a>
+            <a class="link" href="{{url_for('login_page')}}">Login</a>
         </ul>
     </nav>
+
+{% with messages=get_flashed_messages(with_categories=true)%}
+  {% if messages %}
+    {% for category, message in messages %}
+      <p class="err">{{message}}</p>
+    {%endfor%}
+  {%endif%}
+{% endwith %}
+
 {% block content %}
 
 {% endblock %}

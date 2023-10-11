@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+{% block content %}
+<form method="POST" class="form-register">
+    <h2 class="head-auth">Please Login 👉</h2>
+    {{ form.hidden_tag() }}
+<div class="form-parent">
+<div class="input-block">
+    <h3>{{form.username.label()}}</h3>
+    {{form.username(class="child",placeholder="Username")}}
+</div>
+<div class="input-block">
+    <h3>{{form.password.label()}}</h3>
+    {{form.password(class="child",placeholder="Enter Password")}}
+</div>
+    {{form.submit(class="btn")}}
+    <p class="or">Not have account?</p>
+    <a href="{{url_for('register_page')}}" class="btn-option">Register</a>
+    
+</div>
+</form>
+{%endblock%}
