@@ -1,0 +1,18 @@
+{% extends 'base.html'%}
+{% block content %}
+
+<form method="POST" class="form-register">
+<div class="form-parent">
+    {{form.username.label()}}
+    {{form.username(class="child",placeholder="User Name")}}
+    {{form.email_address.label()}}
+    {{form.email_address(class="child",placeholder="User Email")}}
+    {{form.password1.label()}}
+    {{form.password1(class="child",placeholder="Enter Password")}}
+    {{form.password2.label()}}
+    {{form.password2(class="child",placeholder="Enter Confirm Password")}}
+</div>
+
+</form>
+
+{% endblock %}
