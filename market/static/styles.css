@@ -1,21 +1,30 @@
 body{
-    background-color: rgb(42, 40, 40);
-    color: whitesmoke;
     margin: 0;
     padding: 0;
+    font-family: monospace;
 }
 .nav{
     width: 100%;
     font-family: monospace;
-    background-color: rgb(90, 87, 87);
+    background-color:rgb(210, 65, 94);
     display: flex;
     justify-content: space-between;
+}
+.err{
+    text-align: center;
+    color: red;
+    font-family: monospace;
+    font-weight: 600;
 }
 .nav-head{
     color: whitesmoke;
     font-size: 20px;
     margin-left: 10px;
     font-weight: 600;
+}
+.head-auth{
+  text-align: center;
+  color:rgb(40, 123, 186);
 }
 .links{
     font-family: monospace;
@@ -55,21 +64,59 @@ body{
 }
 .form-register{
     margin: auto;
-    margin-top: 100px;
-    width:300px;
+    margin-top: 50px;
+    width:400px;
     justify-content: center;
-    padding:3%;
 }
 .form-parent{
+    font-family: monospace;
+    padding:5%;
+    box-shadow: .5px .5px 3px 1px grey;
     display: flex;
     flex-direction: column;
     justify-items: center;
 }
 .child{
-    padding:5px;
-    margin: 5px;
+    padding:2px;
     border:none;
     font-size: 15px;
     font-weight: 600;
+    height: 20px;
     
+}
+.input-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+}
+.or{
+    text-align: center;
+}
+.btn{
+    background-color: rgb(40, 123, 186);
+    border: none;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    color: whitesmoke;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.btn-option{
+    border: 1px solid rgb(40, 123, 186);
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    color:rgb(40, 123, 186);
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+.btn-option:hover{
+    background-color: rgb(40, 123, 186);
+    color: whitesmoke;
 }

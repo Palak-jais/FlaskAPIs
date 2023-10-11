@@ -2,15 +2,30 @@
 {% block content %}
 
 <form method="POST" class="form-register">
+    <h2 class="head-auth">Please Create Account👉</h2>
+    {{ form.hidden_tag() }}
 <div class="form-parent">
-    {{form.username.label()}}
+<div class="input-block">
+    <h3>{{form.username.label()}}</h3>
     {{form.username(class="child",placeholder="User Name")}}
-    {{form.email_address.label()}}
+</div>
+<div class="input-block">
+    <h3>{{form.email_address.label()}}</h3>
     {{form.email_address(class="child",placeholder="User Email")}}
-    {{form.password1.label()}}
+</div>
+<div class="input-block">
+    <h3>{{form.password1.label()}}</h3>
     {{form.password1(class="child",placeholder="Enter Password")}}
-    {{form.password2.label()}}
+</div>
+<div class="input-block">
+    <h3>{{form.password2.label()}}</h3>
     {{form.password2(class="child",placeholder="Enter Confirm Password")}}
+</div>
+    {{form.submit(class="btn")}}
+
+    <p class="or">Have account?</p>
+    <a href="{{url_for('login_page')}}" class="btn-option">Login</a>
+    
 </div>
 
 </form>
